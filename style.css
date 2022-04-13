@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    padding: 1rem 0;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+    margin-bottom: 0.7rem;
+}
+
+.box {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    margin: 0 15rem;
+}
+
+.box textarea {
+    width: 22rem;
+    height: 4.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+button {
+    width: 8rem;
+    background-color: #56950e;
+    color: #fff;
+    padding: 0.5rem;
+    margin-top: 0.7rem;
+    border-radius: 5%;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    box-shadow: 0 0.7px 4px rgb(0 0 0 / 5%);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #63ab11;
+    color: black;
+}
+
+#notes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxItem {
+    border: 2px solid #ddd7d7;
+    background-color: #f9f9f9;
+    width: 25%;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.boxItem p {
+    padding: 0.5rem 0;
+}
+
+.boxItem button {
+    width: 7rem;
+    padding: 0.3rem;
+    font-size: 1rem;
+    margin-top: 0;
+    font-weight: 300;
+}
+
+@media (min-width: 800px) and (max-width:1120px) {
+    .box {
+        margin: 0 6rem;
+    }
+
+    .boxItem {
+        width: 36%;
+    }
+}
+
+@media (min-width: 500px) and (max-width:800px) {
+    .box {
+        margin: 0 5rem;
+    }
+
+    .boxItem {
+        width: 34%;
+    }
+}
+
+@media (min-width: 200px) and (max-width:500px) {
+    .box {
+        margin: 0 2rem;
+    }
+
+    .boxItem {
+        width: 70%;
+
+    }
+
+    .box textarea {
+        width: 18rem;
+        height: 4.5rem;
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 100px) and (max-width:350px) {
+    .box {
+        margin: 0 1rem;
+    }
+
+    .boxItem {
+        width: 58%;
+
+    }
+
+    .box textarea {
+        width: 12rem;
+        height: 4.5rem;
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+}
